@@ -19,7 +19,7 @@ export default async function AppRedirectPage() {
   const userData = userDoc.data();
 
   if (!userData || !userData.role) {
-    return redirect('/role-selection');
+    return redirect('/RoleSelection');
   }
 
   // Redirect based on role and profile completion
