@@ -17,11 +17,11 @@ function CompanySidebar() {
       <div className='flex justify-center'>
 
       <aside className="w-20 flex flex-col gap-8 items-center py-6 space-y-6">
-      <Link href="/dashboard" aria-label="Dashboard">
+      <Link href="/CompanyDashboard" aria-label="Dashboard">
         <LayoutDashboard
           className={clsx(
             'w-6 h-6 transition-colors',
-            pathname === '/dashboard' ? 'text-black' : 'text-gray-400 hover:text-black '
+            pathname === '/CompanyDashboard' ? 'text-black' : 'text-gray-400 hover:text-black '
           )}
         />
       </Link>
