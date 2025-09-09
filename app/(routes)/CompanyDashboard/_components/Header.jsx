@@ -44,12 +44,15 @@ const {user}=useKindeBrowserClient();
     <DropdownMenu className>
        <DropdownMenuTrigger>
     <Image
-      src={user?.picture}  
-      alt='avatar'
-      width={70}
-      height={70}
-      className="rounded-full lg:absolute top-0 right-6"
-    />
+  src={
+    user?.picture ||
+    'https://www.gravatar.com/avatar/?d=mp&s=200' // fallback if no user picture
+  }
+  alt="avatar"
+  width={70}
+  height={70}
+  className="rounded-full lg:absolute top-0 right-6"
+/>
 
        </DropdownMenuTrigger>
         <DropdownMenuContent className="w-64 bg-gray-900 text-white rounded-xl p-4 shadow-lg border border-gray-700">
